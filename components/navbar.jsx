@@ -10,7 +10,7 @@ function Navbar() {
       </div>
       <div>
         <h1 className="font-bold text-3xl p-2 sm:p-4  text-violet-100">
-          Avatarify
+          Pixels
         </h1>
       </div>
     </nav>
