@@ -1,6 +1,6 @@
-## Avatarify
+## Pixels
 
-Avatarify is a platform that allows users to upload their images, and the AI would generate avatars.
+Pixels lets you generate cool avatars from your profile pictures using AI. Users can upload their images and enter a prompt, and then the AI would generate avatar for it.
 
 ## Instructions to Setup
 
