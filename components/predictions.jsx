@@ -6,14 +6,14 @@ export default function Predictions({ predictions, submissionCount }) {
   const scrollRef = useRef(null);
   if (submissionCount === 0)
     return (
-      <div className="text-center p-4 border border-gray-200 rounded mt-10">
+      <div className="text-center p-8 border border-violet-100 rounded mt-10">
         <img
           src="logo.png"
           alt="Default Avatar"
           className="mx-auto mb-4"
           style={{ height: "300px", width: "300px" }}
         />
-        <p>Your avatar will display here.</p>
+        <p className="text-violet-100 ">Your avatar will display here.</p>
       </div>
     );
 
@@ -50,21 +50,21 @@ export function Prediction({ prediction }) {
   };
 
   return (
-    <div className=" mb-12 text-violet-700">
+    <div className="  text-violet-700 text-center border border-violet-100 rounded">
       <div className="aspect-circle flex flex-col justify-center items-center mx-auto">
         {prediction.output?.length ? (
           <>
             <img
               src={prediction.output[prediction.output.length - 1]}
               alt="output image"
-              className="h-80 pointer-events-none"
+              className="h-80 pointer-events-none mt-2"
             />
-            <div className="text-center px-4 py-2 opacity-60 text-xl">
+            <div className="text-center text-violet-100 px-4 py-2 opacity-60 text-xl">
               Your Avatar is now ready.
             </div>
             <div className="flex mt-2 justify-center">
               <button
-                className="bg-violet-700 p-4 rounded-lg text-white font-bold"
+                className="bg-violet-700 p-4 rounded-lg text-white font-bold mb-2"
                 onClick={downloadAvatar}
               >
                 Download Avatar

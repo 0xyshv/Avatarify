@@ -80,7 +80,7 @@ const Main = () => {
     <>
       <main className="container max-w-[1024px] mx-auto p-5 mt-6">
         <div className="flex flex-row gap-8 ">
-          <div className="container max-w-[512px] mx-auto flex-1 mt-8">
+          <div className="container max-w-[512px] mx-auto flex-1 mt-8 border border-violet-100 p-2 rounded-lg">
             <ImageUploader
               setImage={setImage}
               imageExists={imageExists}

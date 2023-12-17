@@ -32,7 +32,7 @@ export default function ImageUploader({
   };
 
   return (
-    <div className=" text-teal-900 ">
+    <div className=" text-violet-100 ">
       {!imageUrl ? (
         <div>
           <input

@@ -24,7 +24,7 @@ export default function PromptForm({ onSubmit, scribbleExists }) {
         />
 
         <button
-          className={`bg-violet-950 text-violet-100 rounded-r-md text-small inline-block px-5 py-3 flex-none ${
+          className={`bg-violet-500 text-bold text-violet-50 rounded-r-md inline-block px-5 py-3 flex-none ${
             disabled ? "opacity-20 cursor-not-allowed	" : ""
           }`}
           type="submit"
