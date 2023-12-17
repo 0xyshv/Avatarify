@@ -33,7 +33,7 @@ Follow these instructions to set up and run the project:
 - You can access the app by clicking on the enter app button.
 - You can upload an image, enter prompt and click on "Generate Avatar".
 - An unique avatar is crafted for you.
-- Download your avatar by using the dowmload button.
+- Download your avatar by using the download button.
 
 ## Team
 
