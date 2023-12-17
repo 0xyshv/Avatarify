@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import ImageUploader from "components/uploadImage";
 import PromptForm from "components/promptForm";
+import Error from "components/error";
 
 const Main = () => {
   const [image, setImage] = useState(null);
   const [imageExists, setImageExists] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -82,6 +84,7 @@ const Main = () => {
               isProcessing={isProcessing}
               scribbleExists={imageExists}
             />
+            <Error error={error} />
           </div>
         </div>
       </main>
