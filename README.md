@@ -8,7 +8,7 @@ Follow these instructions to set up and run the project:
 
 **Using Github**
 
-- Clone the Git repository: `https://github.com/0xyshv/Avatarify.git`
+- Clone the Git repository: `https://github.com/0xyshv/pixels.git`
 - Install project dependencies: `npm install`
 - Start the development server: `npm run dev`
 - Access the web app in your browser at [http://localhost:3000](http://localhost:3000)
