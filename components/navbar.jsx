@@ -1,0 +1,18 @@
+function Navbar() {
+  return (
+    <nav className="flex justify-between items-center w-full bg-violet-400 sticky top-0 z-40 lg:border-b border-solid border-gray-150">
+      <div className="ml-2">
+        <img
+          src="logo.png"
+          alt="Default Avatar"
+          style={{ height: "40px", width: "40px" }}
+        />
+      </div>
+      <div>
+        <h1 className="font-bold p-2 sm:p-4  text-violet-100">Avatarify</h1>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
