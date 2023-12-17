@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center w-full bg-violet-400 sticky top-0 z-40 lg:border-b border-solid border-gray-150">
+    <nav className="flex justify-between items-center w-full  sticky top-0 z-40  ">
       <div className="ml-2">
         <img
           src="logo.png"
@@ -9,7 +9,9 @@ function Navbar() {
         />
       </div>
       <div>
-        <h1 className="font-bold p-2 sm:p-4  text-violet-100">Avatarify</h1>
+        <h1 className="font-bold text-3xl p-2 sm:p-4  text-violet-100">
+          Avatarify
+        </h1>
       </div>
     </nav>
   );
