@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import ImageUploader from "components/uploadImage";
 import PromptForm from "components/promptForm";
 import Error from "components/error";
+import Predictions from "components/predictions";
+import naughtyWords from "naughty-words";
+import uploadFile from "lib/upload";
+import Script from "next/script";
 
 const Main = () => {
   const [image, setImage] = useState(null);
   const [imageExists, setImageExists] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
   const [error, setError] = useState(null);
+  const [submissionCount, setSubmissionCount] = useState(0);
+  const [predictions, setPredictions] = useState({});
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -86,7 +92,15 @@ const Main = () => {
             />
             <Error error={error} />
           </div>
+          <div className="container max-w-[512px] mx-auto flex-1">
+            <Predictions
+              predictions={predictions}
+              isProcessing={isProcessing}
+              submissionCount={submissionCount}
+            />
+          </div>
         </div>
+        <Script src="https://js.bytescale.com/upload-js-full/v1" />
       </main>
     </>
   );
