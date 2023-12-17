@@ -37,13 +37,16 @@ const Main = () => {
       image: fileUrl,
     };
 
-    const response = await fetch("http://localhost:3000/api/predictions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    });
+    const response = await fetch(
+      "https://pixels-umber-eta.vercel.app/api/predictions",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      }
+    );
     let prediction = await response.json();
 
     setPredictions((predictions) => ({
