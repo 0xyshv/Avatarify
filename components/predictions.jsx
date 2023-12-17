@@ -50,7 +50,7 @@ export function Prediction({ prediction }) {
   };
 
   return (
-    <div className=" mb-12 text-teal-700">
+    <div className=" mb-12 text-violet-700">
       <div className="aspect-circle flex flex-col justify-center items-center mx-auto">
         {prediction.output?.length ? (
           <>
@@ -64,7 +64,7 @@ export function Prediction({ prediction }) {
             </div>
             <div className="flex mt-2 justify-center">
               <button
-                className="bg-teal-700 p-4 rounded-lg text-white font-bold"
+                className="bg-violet-700 p-4 rounded-lg text-white font-bold"
                 onClick={downloadAvatar}
               >
                 Download Avatar

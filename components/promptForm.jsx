@@ -20,11 +20,11 @@ export default function PromptForm({ onSubmit, scribbleExists }) {
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
           placeholder="Describe the avatar you want to create..."
-          className="block w-full flex-grow rounded-l-md text-cyan-950"
+          className="block w-full flex-grow rounded-l-md text-violet-950"
         />
 
         <button
-          className={`bg-cyan-950 text-teal-100 rounded-r-md text-small inline-block px-5 py-3 flex-none ${
+          className={`bg-violet-950 text-violet-100 rounded-r-md text-small inline-block px-5 py-3 flex-none ${
             disabled ? "opacity-20 cursor-not-allowed	" : ""
           }`}
           type="submit"

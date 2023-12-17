@@ -5,6 +5,7 @@ import Error from "components/error";
 import Predictions from "components/predictions";
 import naughtyWords from "naughty-words";
 import uploadFile from "lib/upload";
+import sleep from "lib/sleep";
 import Script from "next/script";
 
 const Main = () => {
@@ -36,7 +37,7 @@ const Main = () => {
       image: fileUrl,
     };
 
-    const response = await fetch(`${window.location.href}/api/predictions`, {
+    const response = await fetch("http://localhost:3000/api/predictions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
